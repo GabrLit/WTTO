@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <title>Muslibry main page</title>
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">NFT Marketplace</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+            </div><!--/.navbar-collapse -->
+        </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+        <div class="container">
+            <br><br>
+            <h1>NFT marketplace</h1>
+            <p>There is no way you will lose your money.</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Example row of columns -->
+        <div class="row">
+            <div class="col-md-3">
+                <h2>Users</h2>
+                <p>All of the users
+                <ul>
+                    <li><a href="#" th:href="@{'/user/list'}" style="margin-right: 5px;">List</a>all of the users in the app</li>
+                    <li><a href="#" th:href="@{'/user/new'}" style="margin-right: 5px;">Add new</a>user</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button" th:href="@{'/users/'}" >All Users &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+                <h2>NFTs</h2>
+                <p>All of the NFTs
+                <ul>
+                    <li><a href="#" th:href="@{'/nft/list'}" style="margin-right: 5px;">List</a>all of the NFTs in the app</li>
+                    <li><a href="#" th:href="@{'/nft/new'}" style="margin-right: 5px;">Add new</a>NFT</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button" th:href="@{'/nfts/'}" >All NFTs &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+                <h2>Bundles</h2>
+                <p>All of the Bundles
+                <ul>
+                    <li><a href="#" th:href="@{'/bundle/list'}" style="margin-right: 5px;">List</a>all bundles in the app</li>
+                    <li><a href="#" th:href="@{'/bundle/new'}" style="margin-right: 5px;">Add new</a>bundle</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button" th:href="@{'/bundles/'}" >All Bundles &raquo;</a></p>
+            </div>
+            <div class="col-md-3">
+                <h2>Currencies</h2>
+                <p>Currencies supported
+                <ul>
+                    <li><a href="#" th:href="@{'/currency/list'}" style="margin-right: 5px;">List</a>all currencies supported in the app</li>
+                    <li><a href="#" th:href="@{'/currency/new'}" style="margin-right: 5px;">Add new</a>currency</li>
+                </ul>
+                <p><a class="btn btn-default" href="#" role="button" th:href="@{'/currencies/'}" >All currencies &raquo;</a></p>
+            </div>
+        <hr>
+        <footer>
+        </footer>
+    </div> <!-- /container -->
+</body>
+</html>
