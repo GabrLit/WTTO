@@ -1,4 +1,4 @@
-package com.example.NFTMarketplace.API;
+package com.example.NFTMarketplace.API.model;
 
 import lombok.Data;
 
