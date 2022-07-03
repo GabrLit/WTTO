@@ -1,7 +1,6 @@
 package com.example.NFTMarketplace.JPAControllers;
 
 import com.example.NFTMarketplace.API.model.CurrencyDTO;
-import com.example.NFTMarketplace.model.Currency;
 import com.example.NFTMarketplace.services.CurrencyService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -46,7 +45,7 @@ public class CurrencyJPAController {
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<Void> deletePet(@PathVariable Long id){
+    public ResponseEntity<Void> deleteCurrency(@PathVariable Long id){
         currencyService.deleteCurrencyById(id);
         return new ResponseEntity<Void>( HttpStatus.OK);
     }
